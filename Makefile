@@ -7,7 +7,7 @@ clean:
 	rm -rf dist/ build/ *.egg-info
 
 testpub:
-	twine upload --repository testpypi dist/*
+	twine upload --repository testpypi --verbose dist/*
 
 pub:
 	twine upload dist/*
