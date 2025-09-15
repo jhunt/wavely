@@ -1,0 +1,2 @@
+class ValueOutOfRangeException(Exception):
+  pass
