@@ -28,6 +28,11 @@ class Path():
     p.y = [y for y in self.y]
     return p
 
+  def __len__(self):
+    return len(self.x)
+  def __iter__(self):
+    return ((i, (self.x[i], self.y[i])) for i in range(len(self)))
+
   def min(self):
     """Find the smallest Y component."""
     return min(self.y)
