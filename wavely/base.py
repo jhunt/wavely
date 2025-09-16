@@ -1,4 +1,4 @@
-from .exceptions import ValueOutOfRangeException
+from .exceptions import *
 
 import math
 
@@ -92,10 +92,10 @@ class Path():
     y = [self.y[i*m] for i in range(math.floor(len(self.x) / float(m)))]
     return Literal(x, y)
 
-  def mix(self, other):
+  def mix(self, other, fn=lambda a,b: (a+b)/2.0):
     if not self.is_congruent(other):
-      raise Exception('cong fail')
-    self.y = [(self.y[i] + other.y[i]) / 2.0 for i in range(len(self.y))]
+      raise CongruenceException(f'Attempted to mix two incongruent paths: self[{len(self)}] + other[{len(other)}]')
+    self.y = [fn(self.y[i], other.y[i]) for i in range(len(self.y))]
     return self
 
   def is_congruent(self, other):
