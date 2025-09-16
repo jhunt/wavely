@@ -20,3 +20,18 @@ def seasonal(a, b, c, t):
     Sigmoid((bx, cx), steepness=s(cx-bx, cy-by)).scale(math.fabs(cy-by)),
     Sigmoid((cx,  t), steepness=s(t-cx,  0-cy )).scale(math.fabs(0-cy )),
   )
+
+def path_average(a,b):
+  return (a+b)/2.0
+
+def path_add(a,b):
+  return a+b
+
+def path_difference(a,b):
+  return a-b
+
+def path_max(a,b):
+  return a if a > b else b
+
+def path_min(a,b):
+  return a if a < b else b
