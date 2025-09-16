@@ -20,13 +20,18 @@ The `examples.py` script will flip through a series of plots,
 showing different ways of dealing with the `Linear` and `Sigmoid`
 primitives and the `Bounded` aggregate.
 
-![Example: Unit Curves](docs/unit.png)
+![Example: Unit Curves][1]
 
-![Example: Linear Curves](docs/example-linear.png)
+![Example: Linear Curves][2]
 
-![Example: Sigmoid Curves](docs/example-sigmoid.png)
+![Example: Sigmoid Curves][3]
 
-![Example: Bounded Random Curves](docs/example-bounded-random.png)
+![Example: Bounded Random Curves][4]
 
-![Example: Seasonal Curves](docs/example-seasonal.png)
+![Example: Seasonal Curves][5]
 
+[1]: https://raw.githubusercontent.com/jhunt/wavely/refs/heads/main/docs/unit.png
+[2]: https://raw.githubusercontent.com/jhunt/wavely/refs/heads/main/docs/example-linear.png
+[3]: https://raw.githubusercontent.com/jhunt/wavely/refs/heads/main/docs/example-sigmoid.png
+[4]: https://raw.githubusercontent.com/jhunt/wavely/refs/heads/main/docs/example-bounded-random.png
+[5]: https://raw.githubusercontent.com/jhunt/wavely/refs/heads/main/docs/example-seasonal.png
